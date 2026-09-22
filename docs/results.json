@@ -84,7 +84,7 @@
      "workflow": null
     }
    },
-   "ms": 1584.6221999963745
+   "ms": 137.18839999637567
   },
   "support|0|english": {
    "result": {
@@ -151,7 +151,7 @@
      "workflow": null
     }
    },
-   "ms": 23.887199989985675
+   "ms": 22.192499978700653
   },
   "support|0|multilingual": {
    "result": {
@@ -218,7 +218,7 @@
      "workflow": null
     }
    },
-   "ms": 18.330799997784197
+   "ms": 16.67680000537075
   },
   "support|0|typed-decisions": {
    "result": {
@@ -285,7 +285,7 @@
      "workflow": null
     }
    },
-   "ms": 20.82840001094155
+   "ms": 20.228900015354156
   },
   "support|1|auto": {
    "result": {
@@ -362,7 +362,7 @@
      "workflow": null
     }
    },
-   "ms": 20.320799987530336
+   "ms": 20.189000002574176
   },
   "support|1|english": {
    "result": {
@@ -429,7 +429,7 @@
      "workflow": null
     }
    },
-   "ms": 20.474999997531995
+   "ms": 20.318099996075034
   },
   "support|1|multilingual": {
    "result": {
@@ -496,7 +496,7 @@
      "workflow": null
     }
    },
-   "ms": 15.926399995805696
+   "ms": 16.320199996698648
   },
   "support|1|typed-decisions": {
    "result": {
@@ -563,7 +563,7 @@
      "workflow": null
     }
    },
-   "ms": 19.802700000582263
+   "ms": 21.26680000219494
   },
   "support|2|auto": {
    "result": {
@@ -642,7 +642,7 @@
      "workflow": null
     }
    },
-   "ms": 16.99560001725331
+   "ms": 16.86070000869222
   },
   "support|2|english": {
    "result": {
@@ -709,7 +709,7 @@
      "workflow": null
     }
    },
-   "ms": 20.52310001454316
+   "ms": 20.321099989814684
   },
   "support|2|multilingual": {
    "result": {
@@ -776,7 +776,7 @@
      "workflow": null
     }
    },
-   "ms": 15.810700017027557
+   "ms": 17.42219997686334
   },
   "support|2|typed-decisions": {
    "result": {
@@ -843,7 +843,7 @@
      "workflow": null
     }
    },
-   "ms": 19.93209999636747
+   "ms": 20.451399992452934
   },
   "injection|0|auto": {
    "result": {
@@ -902,7 +902,7 @@
      "workflow": null
     }
    },
-   "ms": 19.092400005320087
+   "ms": 20.497600024100393
   },
   "injection|0|english": {
    "result": {
@@ -951,7 +951,7 @@
      "workflow": null
     }
    },
-   "ms": 18.683600006625056
+   "ms": 19.1867999965325
   },
   "injection|0|multilingual": {
    "result": {
@@ -1000,7 +1000,7 @@
      "workflow": null
     }
    },
-   "ms": 16.12150002620183
+   "ms": 16.83849998516962
   },
   "injection|0|typed-decisions": {
    "result": {
@@ -1049,7 +1049,7 @@
      "workflow": null
     }
    },
-   "ms": 18.67260001017712
+   "ms": 19.46229999884963
   },
   "injection|1|auto": {
    "result": {
@@ -1108,7 +1108,7 @@
      "workflow": null
     }
    },
-   "ms": 19.43740001297556
+   "ms": 19.966699997894466
   },
   "injection|1|english": {
    "result": {
@@ -1157,7 +1157,7 @@
      "workflow": null
     }
    },
-   "ms": 19.23740000347607
+   "ms": 19.856200000504032
   },
   "injection|1|multilingual": {
    "result": {
@@ -1206,7 +1206,7 @@
      "workflow": null
     }
    },
-   "ms": 16.3110000139568
+   "ms": 16.197999997530133
   },
   "injection|1|typed-decisions": {
    "result": {
@@ -1255,7 +1255,7 @@
      "workflow": null
     }
    },
-   "ms": 19.716600014362484
+   "ms": 20.43140001478605
   },
   "injection|2|auto": {
    "result": {
@@ -1314,7 +1314,7 @@
      "workflow": null
     }
    },
-   "ms": 19.76749999448657
+   "ms": 20.176200021523982
   },
   "injection|2|english": {
    "result": {
@@ -1363,7 +1363,7 @@
      "workflow": null
     }
    },
-   "ms": 19.166499987477437
+   "ms": 20.115399995120242
   },
   "injection|2|multilingual": {
    "result": {
@@ -1412,7 +1412,7 @@
      "workflow": null
     }
    },
-   "ms": 14.46179999038577
+   "ms": 16.20719998027198
   },
   "injection|2|typed-decisions": {
    "result": {
@@ -1461,7 +1461,7 @@
      "workflow": null
     }
    },
-   "ms": 31.3492999994196
+   "ms": 20.030499988934025
   },
   "toolroute|0|auto": {
    "result": {
@@ -1513,7 +1513,7 @@
      "workflow": null
     }
    },
-   "ms": 18.1317999958992
+   "ms": 20.03149999654852
   },
   "toolroute|0|english": {
    "result": {
@@ -1555,7 +1555,7 @@
      "workflow": null
     }
    },
-   "ms": 40.07459999411367
+   "ms": 18.206999986432493
   },
   "toolroute|0|multilingual": {
    "result": {
@@ -1597,7 +1597,7 @@
      "workflow": null
     }
    },
-   "ms": 26.39039998757653
+   "ms": 15.94350000959821
   },
   "toolroute|0|typed-decisions": {
    "result": {
@@ -1639,7 +1639,7 @@
      "workflow": null
     }
    },
-   "ms": 17.640400008531287
+   "ms": 18.795400013914332
   },
   "toolroute|1|auto": {
    "result": {
@@ -1691,7 +1691,7 @@
      "workflow": null
     }
    },
-   "ms": 14.620899979490787
+   "ms": 17.8310000046622
   },
   "toolroute|1|english": {
    "result": {
@@ -1733,7 +1733,7 @@
      "workflow": null
     }
    },
-   "ms": 20.815500000026077
+   "ms": 18.929499987279996
   },
   "toolroute|1|multilingual": {
    "result": {
@@ -1775,7 +1775,7 @@
      "workflow": null
     }
    },
-   "ms": 33.51359997759573
+   "ms": 15.651099995011464
   },
   "toolroute|1|typed-decisions": {
    "result": {
@@ -1817,7 +1817,7 @@
      "workflow": null
     }
    },
-   "ms": 20.649599988246337
+   "ms": 21.3277000002563
   },
   "toolroute|2|auto": {
    "result": {
@@ -1869,7 +1869,7 @@
      "workflow": null
     }
    },
-   "ms": 21.76490001147613
+   "ms": 16.414300014730543
   },
   "toolroute|2|english": {
    "result": {
@@ -1911,7 +1911,7 @@
      "workflow": null
     }
    },
-   "ms": 30.464099982054904
+   "ms": 21.180000010645017
   },
   "toolroute|2|multilingual": {
    "result": {
@@ -1953,7 +1953,7 @@
      "workflow": null
     }
    },
-   "ms": 16.092000005301088
+   "ms": 18.1717999803368
   },
   "toolroute|2|typed-decisions": {
    "result": {
@@ -1995,7 +1995,7 @@
      "workflow": null
     }
    },
-   "ms": 18.52019998477772
+   "ms": 19.81629998772405
   },
   "paper|0|auto": {
    "result": {
@@ -2065,7 +2065,7 @@
      "workflow": null
     }
    },
-   "ms": 19.73489997908473
+   "ms": 19.40590000594966
   },
   "paper|0|english": {
    "result": {
@@ -2125,7 +2125,7 @@
      "workflow": null
     }
    },
-   "ms": 18.10829999158159
+   "ms": 21.5232000045944
   },
   "paper|0|multilingual": {
    "result": {
@@ -2185,7 +2185,7 @@
      "workflow": null
     }
    },
-   "ms": 16.053900006227195
+   "ms": 20.661599992308766
   },
   "paper|0|typed-decisions": {
    "result": {
@@ -2245,7 +2245,7 @@
      "workflow": null
     }
    },
-   "ms": 18.631499988259748
+   "ms": 19.99249999062158
   },
   "paper|1|auto": {
    "result": {
@@ -2315,7 +2315,7 @@
      "workflow": null
     }
    },
-   "ms": 18.891299987444654
+   "ms": 19.108800013782457
   },
   "paper|1|english": {
    "result": {
@@ -2375,7 +2375,7 @@
      "workflow": null
     }
    },
-   "ms": 19.223299983423203
+   "ms": 18.600799987325445
   },
   "paper|1|multilingual": {
    "result": {
@@ -2435,7 +2435,7 @@
      "workflow": null
     }
    },
-   "ms": 16.97779999813065
+   "ms": 15.799499989952892
   },
   "paper|1|typed-decisions": {
    "result": {
@@ -2495,7 +2495,7 @@
      "workflow": null
     }
    },
-   "ms": 18.825699982699007
+   "ms": 19.894000026397407
   },
   "paper|2|auto": {
    "result": {
@@ -2565,7 +2565,7 @@
      "workflow": null
     }
    },
-   "ms": 19.6462000021711
+   "ms": 20.520699996268377
   },
   "paper|2|english": {
    "result": {
@@ -2625,7 +2625,7 @@
      "workflow": null
     }
    },
-   "ms": 18.735899997409433
+   "ms": 19.00910001131706
   },
   "paper|2|multilingual": {
    "result": {
@@ -2685,7 +2685,7 @@
      "workflow": null
     }
    },
-   "ms": 17.270299984375015
+   "ms": 16.883599979337305
   },
   "paper|2|typed-decisions": {
    "result": {
@@ -2745,7 +2745,7 @@
      "workflow": null
     }
    },
-   "ms": 18.892799998866394
+   "ms": 19.724100013263524
   },
   "lovelang|0|auto": {
    "result": {
@@ -2814,7 +2814,7 @@
      "workflow": null
     }
    },
-   "ms": 16.465499997138977
+   "ms": 18.52330000838265
   },
   "lovelang|0|english": {
    "result": {
@@ -2873,7 +2873,7 @@
      "workflow": null
     }
    },
-   "ms": 20.53219999652356
+   "ms": 20.626000012271106
   },
   "lovelang|0|multilingual": {
    "result": {
@@ -2932,7 +2932,7 @@
      "workflow": null
     }
    },
-   "ms": 15.770400001201779
+   "ms": 15.992999979062006
   },
   "lovelang|0|typed-decisions": {
    "result": {
@@ -2991,7 +2991,7 @@
      "workflow": null
     }
    },
-   "ms": 20.22109998506494
+   "ms": 19.679799996083602
   },
   "lovelang|1|auto": {
    "result": {
@@ -3060,7 +3060,7 @@
      "workflow": null
     }
    },
-   "ms": 17.118899995693937
+   "ms": 16.697299986844882
   },
   "lovelang|1|english": {
    "result": {
@@ -3119,7 +3119,7 @@
      "workflow": null
     }
    },
-   "ms": 18.645600008312613
+   "ms": 19.36299999943003
   },
   "lovelang|1|multilingual": {
    "result": {
@@ -3178,7 +3178,7 @@
      "workflow": null
     }
    },
-   "ms": 15.787100011948496
+   "ms": 16.56290001119487
   },
   "lovelang|1|typed-decisions": {
    "result": {
@@ -3237,7 +3237,7 @@
      "workflow": null
     }
    },
-   "ms": 18.655899999430403
+   "ms": 19.488499994622543
   },
   "lovelang|2|auto": {
    "result": {
@@ -3306,7 +3306,7 @@
      "workflow": null
     }
    },
-   "ms": 16.554300003917888
+   "ms": 18.20459999726154
   },
   "lovelang|2|english": {
    "result": {
@@ -3365,7 +3365,7 @@
      "workflow": null
     }
    },
-   "ms": 18.463000014889985
+   "ms": 19.755200017243624
   },
   "lovelang|2|multilingual": {
    "result": {
@@ -3424,7 +3424,7 @@
      "workflow": null
     }
    },
-   "ms": 15.545400005066767
+   "ms": 16.213700000662357
   },
   "lovelang|2|typed-decisions": {
    "result": {
@@ -3483,7 +3483,7 @@
      "workflow": null
     }
    },
-   "ms": 18.27269999193959
+   "ms": 19.22799999010749
   },
   "lovelang|3|auto": {
    "result": {
@@ -3552,7 +3552,7 @@
      "workflow": null
     }
    },
-   "ms": 16.02499998989515
+   "ms": 16.172100004041567
   },
   "lovelang|3|english": {
    "result": {
@@ -3611,7 +3611,7 @@
      "workflow": null
     }
    },
-   "ms": 17.8652000031434
+   "ms": 19.504799973219633
   },
   "lovelang|3|multilingual": {
    "result": {
@@ -3670,7 +3670,7 @@
      "workflow": null
     }
    },
-   "ms": 16.348400007700548
+   "ms": 16.41169999493286
   },
   "lovelang|3|typed-decisions": {
    "result": {
@@ -3729,7 +3729,7 @@
      "workflow": null
     }
    },
-   "ms": 18.102800007909536
+   "ms": 18.68159999139607
   },
   "syco|0|auto": {
    "result": {
@@ -3788,7 +3788,7 @@
      "workflow": null
     }
    },
-   "ms": 20.636200002627447
+   "ms": 20.347999990917742
   },
   "syco|0|english": {
    "result": {
@@ -3837,7 +3837,7 @@
      "workflow": null
     }
    },
-   "ms": 20.45049998559989
+   "ms": 19.947099994169548
   },
   "syco|0|multilingual": {
    "result": {
@@ -3886,7 +3886,7 @@
      "workflow": null
     }
    },
-   "ms": 15.914099989458919
+   "ms": 16.717799997422844
   },
   "syco|0|typed-decisions": {
    "result": {
@@ -3935,7 +3935,7 @@
      "workflow": null
     }
    },
-   "ms": 20.009599975310266
+   "ms": 21.468799997819588
   },
   "syco|1|auto": {
    "result": {
@@ -3994,7 +3994,7 @@
      "workflow": null
     }
    },
-   "ms": 20.56159998755902
+   "ms": 20.762300002388656
   },
   "syco|1|english": {
    "result": {
@@ -4043,7 +4043,7 @@
      "workflow": null
     }
    },
-   "ms": 20.40179999312386
+   "ms": 20.286899991333485
   },
   "syco|1|multilingual": {
    "result": {
@@ -4092,7 +4092,7 @@
      "workflow": null
     }
    },
-   "ms": 15.323100000387058
+   "ms": 17.381800018483773
   },
   "syco|1|typed-decisions": {
    "result": {
@@ -4141,7 +4141,7 @@
      "workflow": null
     }
    },
-   "ms": 20.885000005364418
+   "ms": 20.604400022421032
   },
   "syco|2|auto": {
    "result": {
@@ -4200,7 +4200,7 @@
      "workflow": null
     }
    },
-   "ms": 20.28609998524189
+   "ms": 20.503399980952963
   },
   "syco|2|english": {
    "result": {
@@ -4249,7 +4249,7 @@
      "workflow": null
     }
    },
-   "ms": 20.137100014835596
+   "ms": 19.576099992264062
   },
   "syco|2|multilingual": {
    "result": {
@@ -4298,7 +4298,7 @@
      "workflow": null
     }
    },
-   "ms": 16.292199987219647
+   "ms": 17.48579999548383
   },
   "syco|2|typed-decisions": {
    "result": {
@@ -4347,7 +4347,7 @@
      "workflow": null
     }
    },
-   "ms": 19.594899989897385
+   "ms": 20.18259998294525
   },
   "arena|0|auto": {
    "result": {
@@ -4405,7 +4405,7 @@
      "workflow": null
     }
    },
-   "ms": 15.26810001814738
+   "ms": 17.85660002497025
   },
   "arena|0|english": {
    "result": {
@@ -4453,7 +4453,7 @@
      "workflow": null
     }
    },
-   "ms": 19.90260000457056
+   "ms": 20.831900008488446
   },
   "arena|0|multilingual": {
    "result": {
@@ -4501,7 +4501,7 @@
      "workflow": null
     }
    },
-   "ms": 15.547399991191924
+   "ms": 16.8783999979496
   },
   "arena|0|typed-decisions": {
    "result": {
@@ -4549,7 +4549,7 @@
      "workflow": null
     }
    },
-   "ms": 20.224800013238564
+   "ms": 19.9436999973841
   },
   "arena|1|auto": {
    "result": {
@@ -4607,7 +4607,7 @@
      "workflow": null
     }
    },
-   "ms": 18.623300013132393
+   "ms": 19.873600016580895
   },
   "arena|1|english": {
    "result": {
@@ -4655,7 +4655,7 @@
      "workflow": null
     }
    },
-   "ms": 18.464799999492243
+   "ms": 18.9657999726478
   },
   "arena|1|multilingual": {
    "result": {
@@ -4703,7 +4703,7 @@
      "workflow": null
     }
    },
-   "ms": 16.748499998357147
+   "ms": 16.706099995644763
   },
   "arena|1|typed-decisions": {
    "result": {
@@ -4751,7 +4751,7 @@
      "workflow": null
     }
    },
-   "ms": 19.206400000257418
+   "ms": 18.59260001219809
   },
   "attrib|0|auto": {
    "result": {
@@ -4802,7 +4802,7 @@
      "workflow": null
     }
    },
-   "ms": 16.75079998676665
+   "ms": 16.751999995904043
   },
   "attrib|0|english": {
    "result": {
@@ -4843,7 +4843,7 @@
      "workflow": null
     }
    },
-   "ms": 18.545600003562868
+   "ms": 19.080499972915277
   },
   "attrib|0|multilingual": {
    "result": {
@@ -4884,7 +4884,7 @@
      "workflow": null
     }
    },
-   "ms": 16.826199978822842
+   "ms": 16.00110001163557
   },
   "attrib|0|typed-decisions": {
    "result": {
@@ -4925,7 +4925,7 @@
      "workflow": null
     }
    },
-   "ms": 17.9393999860622
+   "ms": 19.01059999363497
   },
   "attrib|1|auto": {
    "result": {
@@ -4976,7 +4976,7 @@
      "workflow": null
     }
    },
-   "ms": 17.049099988071248
+   "ms": 16.397700004745275
   },
   "attrib|1|english": {
    "result": {
@@ -5017,7 +5017,7 @@
      "workflow": null
     }
    },
-   "ms": 19.547500007320195
+   "ms": 19.492399995215237
   },
   "attrib|1|multilingual": {
    "result": {
@@ -5058,7 +5058,7 @@
      "workflow": null
     }
    },
-   "ms": 15.525099996011704
+   "ms": 15.72270001634024
   },
   "attrib|1|typed-decisions": {
    "result": {
@@ -5099,7 +5099,7 @@
      "workflow": null
     }
    },
-   "ms": 18.654399988008663
+   "ms": 19.19579997775145
   },
   "attrib|2|auto": {
    "result": {
@@ -5150,7 +5150,7 @@
      "workflow": null
     }
    },
-   "ms": 16.30950000253506
+   "ms": 16.219799988903105
   },
   "attrib|2|english": {
    "result": {
@@ -5191,7 +5191,7 @@
      "workflow": null
     }
    },
-   "ms": 18.482099985703826
+   "ms": 19.76779999677092
   },
   "attrib|2|multilingual": {
    "result": {
@@ -5232,7 +5232,7 @@
      "workflow": null
     }
    },
-   "ms": 15.136400004848838
+   "ms": 15.146199992159382
   },
   "attrib|2|typed-decisions": {
    "result": {
@@ -5273,7 +5273,7 @@
      "workflow": null
     }
    },
-   "ms": 18.0636000004597
+   "ms": 18.79390000249259
   },
   "eap|0|auto": {
    "result": {
@@ -5326,7 +5326,7 @@
      "workflow": null
     }
    },
-   "ms": 16.20270000421442
+   "ms": 16.978400002699345
   },
   "eap|0|english": {
    "result": {
@@ -5369,7 +5369,7 @@
      "workflow": null
     }
    },
-   "ms": 19.262100016931072
+   "ms": 19.221299997298047
   },
   "eap|0|multilingual": {
    "result": {
@@ -5412,7 +5412,7 @@
      "workflow": null
     }
    },
-   "ms": 16.05609999387525
+   "ms": 16.27710001775995
   },
   "eap|0|typed-decisions": {
    "result": {
@@ -5455,7 +5455,7 @@
      "workflow": null
     }
    },
-   "ms": 18.26209999853745
+   "ms": 18.75119999749586
   },
   "eap|1|auto": {
    "result": {
@@ -5508,7 +5508,7 @@
      "workflow": null
     }
    },
-   "ms": 18.664899980649352
+   "ms": 16.552099987166002
   },
   "eap|1|english": {
    "result": {
@@ -5551,7 +5551,7 @@
      "workflow": null
     }
    },
-   "ms": 19.808800017926842
+   "ms": 19.381199992494658
   },
   "eap|1|multilingual": {
    "result": {
@@ -5594,7 +5594,7 @@
      "workflow": null
     }
    },
-   "ms": 15.679100004490465
+   "ms": 15.63969999551773
   },
   "eap|1|typed-decisions": {
    "result": {
@@ -5637,7 +5637,7 @@
      "workflow": null
     }
    },
-   "ms": 19.005300011485815
+   "ms": 17.97039998928085
   }
  }
 }
