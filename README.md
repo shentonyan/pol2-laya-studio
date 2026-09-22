@@ -4,7 +4,7 @@
 
 A local, interactive playground for the open-weight **Laya** typed-decision models, with general agent scenarios and scenarios from the **PoL2 (Proof of Love)** project. [English below](#english).
 
-**在线演示 / Live demo：** `https://<你的用户名>.github.io/pol2-laya-studio/`（开启 GitHub Pages 后可用，见下文）
+**在线演示 / Live demo：** `https://shentonyan.github.io/pol2-laya-studio/`
 
 ---
 
@@ -53,7 +53,7 @@ Laya 不生成文本。给它一段**状态**（文本或 JSON）和一组**类�
 需要 Python 3.11+。有 NVIDIA 显卡时会自动用 GPU，没有也能用 CPU 跑（每次约几百毫秒）。
 
 ```powershell
-git clone https://github.com/<你的用户名>/pol2-laya-studio.git
+git clone https://github.com/shentonyan/pol2-laya-studio.git
 cd pol2-laya-studio
 py -3.12 -m venv .venv
 $py = ".\.venv\Scripts\python.exe"
