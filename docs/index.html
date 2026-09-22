@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PoL2 Laya Studio</title>
+<style>
+:root{--bg:#f5f4ef;--panel:#ffffff;--ink:#1c1c1a;--mute:#6d6c65;--line:#e3e1d8;--acc:#2f6f5e;--acc-soft:#dde9e4;--acc2:#b8612a;--acc2-soft:#f5e3d6;--warn:#fff5e6;--warnline:#e6c28a;--code:#f0efe9;--bad:#b3402e}
+@media (prefers-color-scheme:dark){:root{--bg:#131412;--panel:#1b1d1a;--ink:#ebeae4;--mute:#9a9990;--line:#2d2f2b;--acc:#72c0a8;--acc-soft:#23342e;--acc2:#e49c68;--acc2-soft:#3a2a1f;--warn:#2a2318;--warnline:#6a5330;--code:#171916;--bad:#e2765f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;padding:12px 20px;border-bottom:1px solid var(--line);background:var(--panel);position:sticky;top:0;z-index:5}
+header h1{font-size:17px;margin:0;font-weight:650}
+header h1 span{color:var(--acc)}
+.status{font-size:12px;color:var(--mute);display:flex;gap:8px;flex-wrap:wrap}
+.pill{display:inline-block;padding:2px 9px;border-radius:99px;border:1px solid var(--line);font-size:12px;background:var(--bg)}
+.pill.ok{border-color:var(--acc);color:var(--acc)}
+.layout{display:grid;grid-template-columns:270px 1fr;min-height:calc(100vh - 54px)}
+aside{border-right:1px solid var(--line);padding:12px 12px 40px;background:var(--panel);overflow:auto;max-height:calc(100vh - 54px);position:sticky;top:54px}
+aside h3{font-size:11px;color:var(--mute);margin:18px 6px 6px;letter-spacing:1.5px}
+.sc{display:block;width:100%;text-align:left;border:1px solid transparent;background:none;color:inherit;padding:8px 10px;border-radius:9px;cursor:pointer;font:inherit;margin-bottom:2px}
+.sc:hover{background:var(--bg)}
+.sc.on{border-color:var(--acc);background:var(--acc-soft)}
+.sc b{font-weight:600}
+.sc small{display:block;color:var(--mute);font-size:12px;line-height:1.35}
+main{padding:18px 22px 60px;min-width:0}
+.tabs{display:flex;gap:6px;margin-bottom:14px}
+.tab{border:1px solid var(--line);background:var(--panel);color:inherit;padding:6px 14px;border-radius:99px;cursor:pointer;font:inherit}
+.tab.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.intro h2{margin:0 0 4px;font-size:20px}
+.intro p{margin:0 0 10px;color:var(--mute)}
+.note{background:var(--warn);border:1px solid var(--warnline);border-radius:10px;padding:9px 12px;font-size:13px;margin:10px 0 14px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+.card h4{margin:0 0 8px;font-size:13px;color:var(--mute);font-weight:600;letter-spacing:.5px}
+textarea{width:100%;min-height:150px;resize:vertical;border:1px solid var(--line);border-radius:8px;background:var(--code);color:var(--ink);font:12.5px/1.5 ui-monospace,Consolas,"Cascadia Mono",monospace;padding:10px}
+textarea.q{min-height:260px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.chip{border:1px dashed var(--line);background:var(--bg);color:inherit;border-radius:99px;padding:3px 10px;font:inherit;font-size:12px;cursor:pointer}
+.chip.on{border-style:solid;border-color:var(--acc2);background:var(--acc2-soft)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}
+select,button.btn{font:inherit;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:inherit;padding:7px 12px}
+button.btn{cursor:pointer}
+button.primary{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
+button.btn:disabled{opacity:.5;cursor:wait}
+.hint{font-size:12px;color:var(--mute)}
+.meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px;font-size:12.5px}
+.meta .ms{font-size:22px;font-weight:700;color:var(--acc)}
+.reason{font-size:12px;color:var(--mute);margin:-4px 0 10px}
+.ans{border-top:1px solid var(--line);padding:10px 0}
+.ans:first-child{border-top:none;padding-top:0}
+.ans .k{display:flex;justify-content:space-between;gap:8px;font-weight:600;margin-bottom:6px}
+.ans .k em{font-style:normal;font-weight:400;color:var(--mute);font-size:12px}
+.bar{display:grid;grid-template-columns:minmax(80px,38%) 1fr 52px;gap:8px;align-items:center;font-size:12.5px;margin:3px 0}
+.bar .lab{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .trk{height:10px;background:var(--bg);border:1px solid var(--line);border-radius:99px;overflow:hidden}
+.bar .fil{height:100%;background:var(--acc-soft);border-right:2px solid var(--acc)}
+.bar.win .fil{background:var(--acc)}
+.bar.win .lab{font-weight:650}
+.bar .v{text-align:right;font-variant-numeric:tabular-nums}
+.scale{position:relative;display:flex;height:26px;border-radius:6px;overflow:hidden;border:1px solid var(--line)}
+.scale div{flex:1;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--ink);border-left:1px solid var(--line)}
+.scale div:first-child{border-left:none}
+.scale .mk{position:absolute;top:-3px;bottom:-3px;width:3px;background:var(--acc2);border-radius:2px}
+.scalelab{display:flex;justify-content:space-between;font-size:11px;color:var(--mute);margin-top:3px}
+.meter{position:relative;height:14px;border-radius:99px;background:linear-gradient(90deg,var(--acc2-soft),var(--bg) 50%,var(--acc-soft));border:1px solid var(--line)}
+.meter .mid{position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--mute)}
+.meter .dot{position:absolute;top:50%;width:16px;height:16px;border-radius:50%;background:var(--acc);border:2px solid var(--panel);transform:translate(-50%,-50%)}
+.meter .dot.no{background:var(--acc2)}
+.meterlab{display:flex;justify-content:space-between;font-size:11px;color:var(--mute);margin-top:3px}
+.cmp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.hist{margin-top:18px}
+.hist table,.btable{width:100%;border-collapse:collapse;font-size:12.5px}
+.hist td,.hist th,.btable td,.btable th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.hist tr{cursor:pointer}
+.hist tr:hover td{background:var(--bg)}
+.btable td.num{font-variant-numeric:tabular-nums}
+.err{color:var(--bad);white-space:pre-wrap;font-size:12.5px}
+.empty{color:var(--mute);font-size:13px;padding:30px 0;text-align:center}
+@media (max-width:980px){.layout{grid-template-columns:1fr}aside{position:static;max-height:none;border-right:none;border-bottom:1px solid var(--line)}.grid,.cmp{grid-template-columns:1fr}}
+.mode{font-size:12px;padding:2px 9px;border-radius:99px;background:var(--acc2-soft);border:1px solid var(--acc2);color:var(--ink)}
+.banner{background:var(--acc2-soft);border:1px solid var(--acc2);border-radius:10px;padding:9px 12px;font-size:13px;margin:0 0 14px}
+.banner code{background:var(--code);padding:1px 5px;border-radius:4px}
+header a{color:var(--mute);font-size:12px;margin-left:auto;text-decoration:none}
+header a:hover{color:var(--acc)}
+.cmp .pill{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cmp .meta .ms{font-size:18px}
+.cmp .ans .k{flex-wrap:wrap}
+</style>
+</head>
+<body>
+<header>
+  <h1>PoL2 · Laya <span>Studio</span></h1>
+  <div class="status" id="status"><span class="pill">连接中…</span></div>
+  <a href="https://github.com/NandhaKishorM/laya" target="_blank" rel="noopener">基于开源 Laya 模型</a>
+</header>
+<div class="layout">
+  <aside id="side"></aside>
+  <main>
+    <div id="banner"></div>
+    <div class="tabs">
+      <button class="tab on" data-mode="single">单条推理</button>
+      <button class="tab" data-mode="batch">批量评测</button>
+    </div>
+    <div class="intro" id="intro"></div>
+    <div id="single">
+      <div class="grid">
+        <div>
+          <div class="card">
+            <h4>STATE · 输入状态（文本或 JSON）</h4>
+            <div class="chips" id="samples"></div>
+            <textarea id="state" spellcheck="false"></textarea>
+          </div>
+          <div class="card" style="margin-top:14px">
+            <h4>QUESTIONS · 类型化问题（JSON）</h4>
+            <textarea id="questions" class="q" spellcheck="false"></textarea>
+            <div class="row">
+              <select id="model">
+                <option value="auto">自动路由 (Router)</option>
+                <option value="english">english · ModernBERT-large</option>
+                <option value="multilingual">multilingual · mmBERT-base</option>
+                <option value="typed-decisions">typed-decisions</option>
+              </select>
+              <button class="btn primary" id="run">运行 ▶</button>
+              <button class="btn" id="cmp">三模型对比</button>
+              <span class="hint">Ctrl+Enter 运行</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card" id="out"><div class="empty">选择左侧场景，点「运行」查看结果</div></div>
+          <div class="card hist"><h4>HISTORY · 本次会话记录（点击重新载入）</h4><div id="hist"><div class="empty">暂无</div></div></div>
+        </div>
+      </div>
+    </div>
+    <div id="batch" style="display:none">
+      <div class="grid">
+        <div class="card">
+          <h4>BATCH · 每行一条输入（纯文本或单行 JSON）</h4>
+          <textarea id="lines" spellcheck="false" style="min-height:260px"></textarea>
+          <div class="row">
+            <select id="bmodel">
+              <option value="auto">自动路由 (Router)</option>
+              <option value="english">english</option>
+              <option value="multilingual">multilingual</option>
+              <option value="typed-decisions">typed-decisions</option>
+            </select>
+            <button class="btn primary" id="brun">批量运行 ▶</button>
+            <button class="btn" id="bcsv" disabled>导出 CSV</button>
+          </div>
+          <p class="hint">问题使用「单条推理」页当前的 QUESTIONS。可用来与人工标注或 LLM 裁判做一致率对照。</p>
+        </div>
+        <div class="card" id="bout"><div class="empty">结果会显示在这里</div></div>
+      </div>
+    </div>
+  </main>
+</div>
+<script>
+const MODELS = ["english","multilingual","typed-decisions"];
+let CFG = null, S = [], REC = null, LIVE = false;
+let cur = null, curSample = 0, hist = [], batchRows = [];
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pct = x => (x*100).toFixed(1) + "%";
+const toText = st => typeof st === "string" ? st : JSON.stringify(st, null, 2);
+const canon = v => JSON.stringify(v);
+
+/* ---------- 后端：本地实时推理 或 静态录制回放 ---------- */
+function findRecorded(state, questions, model){
+  // 只有当输入与问题和某个内置样例完全一致时，才能回放录制结果
+  for (const sc of S){
+    if (canon(sc.questions) !== canon(questions)) continue;
+    const i = sc.samples.findIndex(s => canon(s.state) === canon(state));
+    if (i >= 0){ const r = REC.results[`${sc.id}|${i}|${model}`]; if (r) return r; }
+  }
+  return null;
+}
+async function predict(state, questions, model){
+  if (LIVE){
+    const r = await fetch("api/predict", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({state, questions, model})});
+    const j = await r.json();
+    if (!r.ok || j.error) throw new Error(j.error || r.statusText);
+    return j;
+  }
+  if (!REC) throw new Error("静态演示：还没有录制结果（docs/results.json）。请在本地运行 scripts/record_demo.py 生成。");
+  const r = findRecorded(state, questions, model);
+  if (!r) throw new Error("静态演示只能回放内置样例的录制结果。修改输入或问题后，需要在本地运行 app.py 实时推理（见 README）。");
+  return {result: r.result, ms: r.ms, model, recorded: true};
+}
+
+/* ---------- 侧栏与场景 ---------- */
+function buildSide(){
+  let html = "", g = null;
+  for (const s of S){
+    if (s.group !== g){ g = s.group; html += `<h3>${esc(CFG.groups[g] || g)}</h3>`; }
+    html += `<button class="sc" data-id="${s.id}"><b>${esc(s.title)}</b><small>${esc(s.desc)}</small></button>`;
+  }
+  $("#side").innerHTML = html;
+  document.querySelectorAll(".sc").forEach(b => b.onclick = () => pick(b.dataset.id));
+}
+function pick(id, sampleIdx=0){
+  cur = S.find(s => s.id === id); curSample = sampleIdx;
+  document.querySelectorAll(".sc").forEach(b => b.classList.toggle("on", b.dataset.id === id));
+  $("#intro").innerHTML = `<h2>${esc(cur.title)}</h2><p>${esc(cur.desc)}</p><div class="note">${esc(CFG.notes[cur.group] || "")}</div>`;
+  $("#samples").innerHTML = cur.samples.map((s,i) => `<button class="chip${i===sampleIdx?" on":""}" data-i="${i}">${esc(s.label)}</button>`).join("");
+  document.querySelectorAll(".chip").forEach(c => c.onclick = () => { curSample = +c.dataset.i; loadSample(); });
+  loadSample();
+  $("#questions").value = JSON.stringify(cur.questions, null, 2);
+  $("#lines").value = cur.samples.map(s => typeof s.state === "string" ? s.state : JSON.stringify(s.state)).join("\n");
+}
+function loadSample(){
+  document.querySelectorAll(".chip").forEach(c => c.classList.toggle("on", +c.dataset.i === curSample));
+  $("#state").value = toText(cur.samples[curSample].state);
+}
+function parseState(txt){
+  const t = txt.trim();
+  if (t.startsWith("{")) { try { return JSON.parse(t); } catch(e){ throw new Error("STATE 的 JSON 格式有误：" + e.message); } }
+  return t;
+}
+function parseQ(){
+  try { return JSON.parse($("#questions").value); } catch(e){ throw new Error("QUESTIONS 的 JSON 格式有误：" + e.message); }
+}
+
+/* ---------- 结果渲染 ---------- */
+function renderAnswer(k, a){
+  let body = "";
+  const conf = a.confidence != null ? `置信度 ${pct(a.confidence)}` : "";
+  if (a.type === "choice" && a.probabilities){
+    const items = Object.entries(a.probabilities).sort((x,y) => y[1]-x[1]);
+    body = items.map(([lab,p]) => `<div class="bar${lab===a.choice?" win":""}"><span class="lab" title="${esc(lab)}">${esc(lab)}</span><span class="trk"><span class="fil" style="display:block;width:${(p*100).toFixed(1)}%"></span></span><span class="v">${pct(p)}</span></div>`).join("");
+  } else if (a.type === "score" && a.probabilities){
+    const keys = Object.keys(a.probabilities).sort((x,y) => +x - +y);
+    const max = keys.length - 1, legend = a.legend || {};
+    const cells = keys.map(key => { const p = a.probabilities[key];
+      return `<div style="background:color-mix(in srgb, var(--acc) ${Math.round(p*85)}%, var(--bg))" title="${esc(legend[key]||key)}: ${pct(p)}">${pct(p)}</div>`; }).join("");
+    const pos = max > 0 ? (a.score / max) * 100 : 0;
+    body = `<div class="scale">${cells}<span class="mk" style="left:calc(${pos.toFixed(1)}% - 1.5px)"></span></div>` +
+      `<div class="scalelab">${keys.map(key => `<span>${esc(legend[key]||key)}</span>`).join("")}</div>` +
+      `<div class="hint" style="margin-top:4px">期望分 <b>${a.score.toFixed(2)}</b> / ${max}（橙色标记）</div>`;
+  } else if (a.type === "noul" && a.noul != null){
+    const p = a.noul;
+    body = `<div class="meter"><span class="mid"></span><span class="dot${p<0.5?" no":""}" style="left:${(p*100).toFixed(1)}%"></span></div>` +
+      `<div class="meterlab"><span>否 / false</span><span>P(true) = <b>${pct(p)}</b></span><span>是 / true</span></div>`;
+  } else {
+    body = `<pre class="hint">${esc(JSON.stringify(a, null, 2))}</pre>`;
+  }
+  const act = a.action && a.action.act_probability != null ? ` · 执行概率 ${pct(a.action.act_probability)}` : "";
+  return `<div class="ans"><div class="k"><span>${esc(k)} <em>${esc(a.type||"")}</em></span><em>${conf}${act}</em></div>${body}</div>`;
+}
+function renderResult(j){
+  const res = j.result || {}, rt = res.routing || {}, ans = res.answers || {};
+  return `<div class="meta"><span class="ms">${j.ms.toFixed(1)} ms</span><span class="pill ok">${esc(rt.model || j.model || "?")}</span>${rt.repo?`<span class="pill">${esc(rt.repo)}</span>`:""}${j.recorded?`<span class="mode">录制回放</span>`:""}</div>` +
+    (rt.reason ? `<div class="reason">路由原因：${esc(rt.reason)}</div>` : "") +
+    Object.entries(ans).map(([k,a]) => renderAnswer(k,a)).join("");
+}
+function summarize(a){
+  if (!a) return "";
+  if (a.type === "choice") return `${a.choice} (${pct(a.confidence ?? (a.probabilities||{})[a.choice] ?? 0)})`;
+  if (a.type === "score") return a.score != null ? a.score.toFixed(2) : "";
+  if (a.type === "noul") return a.noul != null ? a.noul.toFixed(3) : "";
+  return JSON.stringify(a);
+}
+function pushHist(stateTxt, qTxt, model, j){
+  hist.unshift({scId: cur ? cur.id : null, title: cur ? cur.title : "自定义", stateTxt, qTxt, model, ms: j.ms,
+    routed: (j.result.routing||{}).model || model, first: Object.values(j.result.answers||{})[0]});
+  hist = hist.slice(0, 30);
+  $("#hist").innerHTML = `<table><tr><th>场景</th><th>模型</th><th>耗时</th><th>首个答案</th></tr>` +
+    hist.map((h,i) => `<tr data-i="${i}"><td>${esc(h.title)}</td><td>${esc(h.routed)}</td><td>${h.ms.toFixed(1)} ms</td><td>${esc(summarize(h.first))}</td></tr>`).join("") + `</table>`;
+  document.querySelectorAll("#hist tr[data-i]").forEach(tr => tr.onclick = () => {
+    const h = hist[+tr.dataset.i];
+    if (h.scId) pick(h.scId);
+    $("#state").value = h.stateTxt; $("#questions").value = h.qTxt; $("#model").value = h.model;
+  });
+}
+function busy(on){ ["#run","#cmp","#brun"].forEach(s => $(s).disabled = on); }
+
+/* ---------- 操作 ---------- */
+async function run(){
+  let state, questions;
+  try { state = parseState($("#state").value); questions = parseQ(); } catch(e){ $("#out").innerHTML = `<div class="err">${esc(e.message)}</div>`; return; }
+  const model = $("#model").value;
+  busy(true); $("#out").innerHTML = `<div class="empty">推理中…</div>`;
+  try {
+    const j = await predict(state, questions, model);
+    $("#out").innerHTML = renderResult(j);
+    pushHist($("#state").value, $("#questions").value, model, j);
+  } catch(e){ $("#out").innerHTML = `<div class="err">${esc(e.message)}</div>`; }
+  busy(false);
+}
+async function compare(){
+  let state, questions;
+  try { state = parseState($("#state").value); questions = parseQ(); } catch(e){ $("#out").innerHTML = `<div class="err">${esc(e.message)}</div>`; return; }
+  busy(true); $("#out").innerHTML = `<div class="empty">三个模型依次推理中…</div>`;
+  const cols = [];
+  for (const m of MODELS){
+    try { const j = await predict(state, questions, m); cols.push(`<div>${renderResult(j)}</div>`); }
+    catch(e){ cols.push(`<div><div class="pill">${m}</div><div class="err">${esc(e.message)}</div></div>`); }
+  }
+  $("#out").innerHTML = `<h4>三模型对比（同一输入、同一问题）</h4><div class="cmp">${cols.join("")}</div>` +
+    `<p class="hint">english 模型读不懂非拉丁文字时仍可能给出很高的置信度——这正是对比的意义所在。</p>`;
+  busy(false);
+}
+async function runBatch(){
+  let questions;
+  try { questions = parseQ(); } catch(e){ $("#bout").innerHTML = `<div class="err">${esc(e.message)}</div>`; return; }
+  const raw = $("#lines").value.split(/\r?\n/).map(s => s.trim()).filter(Boolean);
+  if (!raw.length) return;
+  let states;
+  try { states = raw.map(parseState); } catch(e){ $("#bout").innerHTML = `<div class="err">${esc(e.message)}</div>`; return; }
+  const model = $("#bmodel").value;
+  busy(true); $("#bout").innerHTML = `<div class="empty">批量推理 ${states.length} 条…</div>`;
+  const t0 = performance.now(); batchRows = [];
+  for (let i = 0; i < states.length; i++){
+    try { const j = await predict(states[i], questions, model);
+      batchRows.push({text: raw[i], ms: j.ms, routed: (j.result.routing||{}).model || "", answers: j.result.answers}); }
+    catch(e){ batchRows.push({text: raw[i], error: e.message}); }
+  }
+  const sumMs = batchRows.reduce((s,r) => s + (r.ms || 0), 0);
+  const keys = Object.keys(questions);
+  $("#bout").innerHTML = `<div class="meta"><span class="ms">${sumMs.toFixed(0)} ms</span><span class="pill">${states.length} 条 · 平均 ${(sumMs/states.length).toFixed(1)} ms/条（纯推理）</span></div>` +
+    `<div style="overflow:auto"><table class="btable"><tr><th>#</th><th>输入</th><th>模型</th>${keys.map(k=>`<th>${esc(k)}</th>`).join("")}</tr>` +
+    batchRows.map((r,i) => `<tr><td>${i+1}</td><td>${esc(r.text.length>60? r.text.slice(0,60)+"…" : r.text)}</td><td>${esc(r.routed||"")}</td>` +
+      (r.error ? `<td colspan="${keys.length}" class="err">${esc(r.error)}</td>` : keys.map(k => `<td class="num">${esc(summarize(r.answers[k]))}</td>`).join("")) + `</tr>`).join("") +
+    `</table></div>`;
+  $("#bcsv").disabled = false;
+  busy(false);
+}
+function exportCsv(){
+  if (!batchRows.length) return;
+  let questions = {}; try { questions = parseQ(); } catch(e){}
+  const keys = Object.keys(questions);
+  const q = s => '"' + String(s ?? "").replace(/"/g,'""') + '"';
+  const head = ["input","model","ms"];
+  keys.forEach(k => { head.push(k); head.push(k + "_detail"); });
+  const lines = [head.map(q).join(",")];
+  for (const r of batchRows){
+    const row = [r.text, r.routed || "", r.ms != null ? r.ms.toFixed(2) : ""];
+    keys.forEach(k => { const a = r.answers ? r.answers[k] : null; row.push(summarize(a)); row.push(a ? JSON.stringify(a.probabilities ?? a) : r.error || ""); });
+    lines.push(row.map(q).join(","));
+  }
+  const blob = new Blob(["﻿" + lines.join("\n")], {type:"text/csv;charset=utf-8"});
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = "laya_batch.csv"; a.click();
+}
+
+/* ---------- 启动 ---------- */
+document.querySelectorAll(".tab").forEach(t => t.onclick = () => {
+  document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x === t));
+  $("#single").style.display = t.dataset.mode === "single" ? "" : "none";
+  $("#batch").style.display = t.dataset.mode === "batch" ? "" : "none";
+});
+$("#run").onclick = run; $("#cmp").onclick = compare; $("#brun").onclick = runBatch; $("#bcsv").onclick = exportCsv;
+document.addEventListener("keydown", e => { if (e.ctrlKey && e.key === "Enter") { e.preventDefault(); $("#single").style.display === "none" ? runBatch() : run(); } });
+
+async function boot(){
+  try { CFG = await (await fetch("scenarios.json")).json(); S = CFG.scenarios; }
+  catch(e){ document.body.innerHTML = `<p style="padding:20px">无法加载 scenarios.json：请通过 app.py 或 GitHub Pages 打开本页，而不是直接双击本地文件。</p>`; return; }
+  try {
+    const r = await fetch("api/status");
+    if (!r.ok) throw 0;
+    const s = await r.json(); LIVE = true;
+    $("#status").innerHTML = `<span class="pill ok">实时推理 · ${esc(s.device)}</span><span class="pill">${esc(s.gpu)}</span><span class="pill">torch ${esc(s.torch)}</span>`;
+  } catch(e){
+    LIVE = false;
+    try { const r = await fetch("results.json"); if (r.ok) REC = await r.json(); } catch(_){}
+    const m = REC && REC.meta ? REC.meta : null;
+    $("#status").innerHTML = `<span class="mode">静态演示</span>` + (m ? `<span class="pill">录制于 ${esc(m.recorded_at)}</span><span class="pill">${esc(m.gpu)}</span>` : `<span class="pill">无录制数据</span>`);
+    $("#banner").innerHTML = `<div class="banner">这是<b>静态演示</b>：页面回放的是事先在本地${m ? `（${esc(m.gpu)}，${esc(m.recorded_at)}）` : ""}用真实 laya 模型对内置样例跑出的结果，耗时也是当时测得的。想改输入、写自己的问题，请克隆仓库后运行 <code>python app.py</code>。</div>`;
+  }
+  buildSide(); pick(S[0].id);
+}
+boot();
+</script>
+</body>
+</html>

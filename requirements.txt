@@ -1,0 +1,2 @@
+laya
+# PyTorch 请按显卡单独安装，见 README（RTX 50 系需 CUDA 12.8+ 版本）
