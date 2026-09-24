@@ -1,0 +1,206 @@
+{
+ "results": {
+  "jev:openjev": {
+   "all": {
+    "n": 564,
+    "missing": 0,
+    "acc": 0.9290780141843972,
+    "brier": 0.1209159574468086,
+    "ece": 0.04728723404255312,
+    "score_mae": null
+   },
+   "type:noul": {
+    "n": 300,
+    "missing": 0,
+    "acc": 0.9333333333333333,
+    "brier": 0.12013199999999997,
+    "ece": 0.08846666666666664,
+    "score_mae": null
+   },
+   "syco.sycophantic": {
+    "n": 300,
+    "missing": 0,
+    "acc": 0.9333333333333333,
+    "brier": 0.12013199999999997,
+    "ece": 0.08846666666666664,
+    "score_mae": null
+   },
+   "type:choice": {
+    "n": 264,
+    "missing": 0,
+    "acc": 0.9242424242424242,
+    "brier": 0.12180681818181811,
+    "ece": 0.04844696969696961,
+    "score_mae": null
+   },
+   "syco.reply_type": {
+    "n": 264,
+    "missing": 0,
+    "acc": 0.9242424242424242,
+    "brier": 0.12180681818181811,
+    "ece": 0.04844696969696961,
+    "score_mae": null
+   }
+  },
+  "ollama:llama3.1:8b": {
+   "all": {
+    "n": 564,
+    "missing": 0,
+    "acc": 0.7535460992907801,
+    "brier": 0.4050433412135542,
+    "ece": 0.11997635933806147,
+    "score_mae": null
+   },
+   "type:noul": {
+    "n": 300,
+    "missing": 0,
+    "acc": 0.87,
+    "brier": 0.20740740740740704,
+    "ece": 0.05111111111111112,
+    "score_mae": null
+   },
+   "syco.sycophantic": {
+    "n": 300,
+    "missing": 0,
+    "acc": 0.87,
+    "brier": 0.20740740740740704,
+    "ece": 0.05111111111111112,
+    "score_mae": null
+   },
+   "type:choice": {
+    "n": 264,
+    "missing": 0,
+    "acc": 0.6212121212121212,
+    "brier": 0.6296296296296294,
+    "ece": 0.24621212121212116,
+    "score_mae": null
+   },
+   "syco.reply_type": {
+    "n": 264,
+    "missing": 0,
+    "acc": 0.6212121212121212,
+    "brier": 0.6296296296296294,
+    "ece": 0.24621212121212116,
+    "score_mae": null
+   }
+  },
+  "base:multilingual": {
+   "all": {
+    "n": 564,
+    "missing": 0,
+    "acc": 0.6382978723404256,
+    "brier": 0.5120630507402284,
+    "ece": 0.12962732362824844,
+    "score_mae": null
+   },
+   "type:noul": {
+    "n": 300,
+    "missing": 0,
+    "acc": 0.7166666666666667,
+    "brier": 0.44390709046666654,
+    "ece": 0.20758633333333337,
+    "score_mae": null
+   },
+   "syco.sycophantic": {
+    "n": 300,
+    "missing": 0,
+    "acc": 0.7166666666666667,
+    "brier": 0.44390709046666654,
+    "ece": 0.20758633333333337,
+    "score_mae": null
+   },
+   "type:choice": {
+    "n": 264,
+    "missing": 0,
+    "acc": 0.5492424242424242,
+    "brier": 0.589513005596548,
+    "ece": 0.051402184106987735,
+    "score_mae": null
+   },
+   "syco.reply_type": {
+    "n": 264,
+    "missing": 0,
+    "acc": 0.5492424242424242,
+    "brier": 0.589513005596548,
+    "ece": 0.051402184106987735,
+    "score_mae": null
+   }
+  },
+  "C:\\Users\\Administrator\\pol2-laya-studio\\distill_data\\models\\laya-pol2-20260924-0504": {
+   "all": {
+    "n": 564,
+    "missing": 0,
+    "acc": 0.7695035460992907,
+    "brier": 0.34557773341058307,
+    "ece": 0.054722690491017724,
+    "score_mae": null
+   },
+   "type:noul": {
+    "n": 300,
+    "missing": 0,
+    "acc": 0.7866666666666666,
+    "brier": 0.3232264985333332,
+    "ece": 0.09280533333333332,
+    "score_mae": null
+   },
+   "syco.sycophantic": {
+    "n": 300,
+    "missing": 0,
+    "acc": 0.7866666666666666,
+    "brier": 0.3232264985333332,
+    "ece": 0.09280533333333332,
+    "score_mae": null
+   },
+   "type:choice": {
+    "n": 264,
+    "missing": 0,
+    "acc": 0.75,
+    "brier": 0.3709768639529125,
+    "ece": 0.07473117059562226,
+    "score_mae": null
+   },
+   "syco.reply_type": {
+    "n": 264,
+    "missing": 0,
+    "acc": 0.75,
+    "brier": 0.3709768639529125,
+    "ece": 0.07473117059562226,
+    "score_mae": null
+   }
+  }
+ },
+ "diagnostics": {
+  "jev:openjev": {
+   "syco_pairs": 150,
+   "syco_mean_delta": -0.0052000000000000015,
+   "syco_mean_abs_delta": 0.01373333333333333,
+   "arena_pairs": 0,
+   "arena_position_consistency": null,
+   "arena_mean_tv": null
+  },
+  "ollama:llama3.1:8b": {
+   "syco_pairs": 150,
+   "syco_mean_delta": -0.044444444444444446,
+   "syco_mean_abs_delta": 0.08444444444444445,
+   "arena_pairs": 0,
+   "arena_position_consistency": null,
+   "arena_mean_tv": null
+  },
+  "base:multilingual": {
+   "syco_pairs": 150,
+   "syco_mean_delta": 0.028300666666666665,
+   "syco_mean_abs_delta": 0.06746866666666666,
+   "arena_pairs": 0,
+   "arena_position_consistency": null,
+   "arena_mean_tv": null
+  },
+  "C:\\Users\\Administrator\\pol2-laya-studio\\distill_data\\models\\laya-pol2-20260924-0504": {
+   "syco_pairs": 150,
+   "syco_mean_delta": 0.006182666666666666,
+   "syco_mean_abs_delta": 0.019492,
+   "arena_pairs": 0,
+   "arena_position_consistency": null,
+   "arena_mean_tv": null
+  }
+ }
+}

@@ -1,0 +1,776 @@
+{
+ "results": {
+  "jev:openjev": {
+   "all": {
+    "n": 632,
+    "missing": 0,
+    "acc": 0.9003164556962026,
+    "brier": 0.14335812426160438,
+    "ece": 0.06102848101265826,
+    "score_mae": 0.3574796829268293
+   },
+   "type:choice": {
+    "n": 179,
+    "missing": 0,
+    "acc": 0.9273743016759777,
+    "brier": 0.11411173184357541,
+    "ece": 0.04368715083798895,
+    "score_mae": null
+   },
+   "lovelang.stance": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.8780487804878049,
+    "brier": 0.16778536585365852,
+    "ece": 0.07512195121951218,
+    "score_mae": null
+   },
+   "type:noul": {
+    "n": 412,
+    "missing": 0,
+    "acc": 0.9053398058252428,
+    "brier": 0.13711758620280579,
+    "ece": 0.07961165048543693,
+    "score_mae": null
+   },
+   "lovelang.truthful": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.9512195121951219,
+    "brier": 0.15559512195121944,
+    "ece": 0.18073170731707316,
+    "score_mae": null
+   },
+   "type:score": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.7317073170731707,
+    "brier": 0.3337533906775123,
+    "ece": 0.22560975609756104,
+    "score_mae": 0.3574796829268293
+   },
+   "lovelang.warmth": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.7317073170731707,
+    "brier": 0.3337533906775123,
+    "ece": 0.22560975609756104,
+    "score_mae": 0.3574796829268293
+   },
+   "syco.sycophantic": {
+    "n": 37,
+    "missing": 0,
+    "acc": 1.0,
+    "brier": 0.028497297297297303,
+    "ece": 0.09837837837837839,
+    "score_mae": null
+   },
+   "syco.reply_type": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.972972972972973,
+    "brier": 0.04351891891891892,
+    "ece": 0.04864864864864869,
+    "score_mae": null
+   },
+   "syco.respectful": {
+    "n": 37,
+    "missing": 0,
+    "acc": 1.0,
+    "brier": 0.07861621621621623,
+    "ece": 0.17459459459459462,
+    "score_mae": null
+   },
+   "arena.better": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.9807692307692307,
+    "brier": 0.049657692307692305,
+    "ece": 0.04173076923076924,
+    "score_mae": null
+   },
+   "arena.A_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.7307692307692307,
+    "brier": 0.26928846153846153,
+    "ece": 0.11826923076923078,
+    "score_mae": null
+   },
+   "arena.B_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.8269230769230769,
+    "brier": 0.22424615384615385,
+    "ece": 0.11538461538461539,
+    "score_mae": null
+   },
+   "attrib.target": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.8775510204081632,
+    "brier": 0.1909061224489796,
+    "ece": 0.09979591836734693,
+    "score_mae": null
+   },
+   "attrib.labels_people": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.9795918367346939,
+    "brier": 0.09201224489795919,
+    "ece": 0.11816326530612242,
+    "score_mae": null
+   },
+   "eap.manipulative": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.9791666666666666,
+    "brier": 0.037258333333333345,
+    "ece": 0.05124999999999992,
+    "score_mae": null
+   },
+   "eap.respects_autonomy": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.9375,
+    "brier": 0.102143527870375,
+    "ece": 0.11083333333333337,
+    "score_mae": null
+   },
+   "eap.honest": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.8125,
+    "brier": 0.19346158703704167,
+    "ece": 0.11687499999999998,
+    "score_mae": null
+   }
+  },
+  "ollama:qwen2.5:7b": {
+   "all": {
+    "n": 632,
+    "missing": 0,
+    "acc": 0.814873417721519,
+    "brier": 0.3526722946554159,
+    "ece": 0.1703586497890296,
+    "score_mae": 0.39837397560975607
+   },
+   "type:choice": {
+    "n": 179,
+    "missing": 0,
+    "acc": 0.7374301675977654,
+    "brier": 0.521415270018622,
+    "ece": 0.2513966480446928,
+    "score_mae": null
+   },
+   "lovelang.stance": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.8292682926829268,
+    "brier": 0.3523035230352303,
+    "ece": 0.1869918699186992,
+    "score_mae": null
+   },
+   "type:noul": {
+    "n": 412,
+    "missing": 0,
+    "acc": 0.866504854368932,
+    "brier": 0.24379719956850163,
+    "ece": 0.12135922330097092,
+    "score_mae": null
+   },
+   "lovelang.truthful": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.7560975609756098,
+    "brier": 0.4498644986449864,
+    "ece": 0.20325203252032517,
+    "score_mae": null
+   },
+   "type:score": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.6341463414634146,
+    "brier": 0.7100270894308996,
+    "ece": 0.32520325203252026,
+    "score_mae": 0.39837397560975607
+   },
+   "lovelang.warmth": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.6341463414634146,
+    "brier": 0.7100270894308996,
+    "ece": 0.32520325203252026,
+    "score_mae": 0.39837397560975607
+   },
+   "syco.sycophantic": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.918918918918919,
+    "brier": 0.16216216216216217,
+    "ece": 0.08108108108108103,
+    "score_mae": null
+   },
+   "syco.reply_type": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.3783783783783784,
+    "brier": 1.2492492492492493,
+    "ece": 0.6306306306306306,
+    "score_mae": null
+   },
+   "syco.respectful": {
+    "n": 37,
+    "missing": 0,
+    "acc": 1.0,
+    "brier": 0.0,
+    "ece": 0.0,
+    "score_mae": null
+   },
+   "arena.better": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.9230769230769231,
+    "brier": 0.15384615384615385,
+    "ece": 0.07692307692307687,
+    "score_mae": null
+   },
+   "arena.A_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.8076923076923077,
+    "brier": 0.3504273504273504,
+    "ece": 0.16666666666666666,
+    "score_mae": null
+   },
+   "arena.B_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.75,
+    "brier": 0.4358974358974359,
+    "ece": 0.23076923076923078,
+    "score_mae": null
+   },
+   "attrib.target": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.7346938775510204,
+    "brier": 0.5034013605442177,
+    "ece": 0.24489795918367344,
+    "score_mae": null
+   },
+   "attrib.labels_people": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.9387755102040817,
+    "brier": 0.12244897959183673,
+    "ece": 0.061224489795918324,
+    "score_mae": null
+   },
+   "eap.manipulative": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.9583333333333334,
+    "brier": 0.06481481481481481,
+    "ece": 0.027777777777777762,
+    "score_mae": null
+   },
+   "eap.respects_autonomy": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.8958333333333334,
+    "brier": 0.18981483333333796,
+    "ece": 0.11111111111111115,
+    "score_mae": null
+   },
+   "eap.honest": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.8125,
+    "brier": 0.351851870370375,
+    "ece": 0.1875,
+    "score_mae": null
+   }
+  },
+  "ollama:llama3.1:8b": {
+   "all": {
+    "n": 632,
+    "missing": 0,
+    "acc": 0.8781645569620253,
+    "brier": 0.22257384177215309,
+    "ece": 0.08069620253164556,
+    "score_mae": 0.284552837398374
+   },
+   "type:choice": {
+    "n": 179,
+    "missing": 0,
+    "acc": 0.8100558659217877,
+    "brier": 0.3451272501551831,
+    "ece": 0.13594040968342647,
+    "score_mae": null
+   },
+   "lovelang.stance": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.8048780487804879,
+    "brier": 0.37398373983739835,
+    "ece": 0.17073170731707318,
+    "score_mae": null
+   },
+   "type:noul": {
+    "n": 412,
+    "missing": 0,
+    "acc": 0.9199029126213593,
+    "brier": 0.14670982092772486,
+    "ece": 0.06796116504854374,
+    "score_mae": null
+   },
+   "lovelang.truthful": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.9024390243902439,
+    "brier": 0.1951219512195122,
+    "ece": 0.09756097560975607,
+    "score_mae": null
+   },
+   "type:score": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.7560975609756098,
+    "brier": 0.4498644878048834,
+    "ece": 0.16260162601626021,
+    "score_mae": 0.284552837398374
+   },
+   "lovelang.warmth": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.7560975609756098,
+    "brier": 0.4498644878048834,
+    "ece": 0.16260162601626021,
+    "score_mae": 0.284552837398374
+   },
+   "syco.sycophantic": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.9459459459459459,
+    "brier": 0.12612612612612617,
+    "ece": 0.08108108108108111,
+    "score_mae": null
+   },
+   "syco.reply_type": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.6486486486486487,
+    "brier": 0.5765765765765765,
+    "ece": 0.18918918918918917,
+    "score_mae": null
+   },
+   "syco.respectful": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.8648648648648649,
+    "brier": 0.20420420420420424,
+    "ece": 0.03603603603603602,
+    "score_mae": null
+   },
+   "arena.better": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.9807692307692307,
+    "brier": 0.047008547008547015,
+    "ece": 0.03205128205128207,
+    "score_mae": null
+   },
+   "arena.A_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.9423076923076923,
+    "brier": 0.08547008547008547,
+    "ece": 0.025641025641025668,
+    "score_mae": null
+   },
+   "arena.B_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.9615384615384616,
+    "brier": 0.08974358974358974,
+    "ece": 0.05769230769230774,
+    "score_mae": null
+   },
+   "attrib.target": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.7551020408163265,
+    "brier": 0.46258503401360546,
+    "ece": 0.20408163265306126,
+    "score_mae": null
+   },
+   "attrib.labels_people": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.9591836734693877,
+    "brier": 0.08616780045351474,
+    "ece": 0.04761904761904758,
+    "score_mae": null
+   },
+   "eap.manipulative": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.9791666666666666,
+    "brier": 0.02314814814814815,
+    "ece": 0.006944444444444442,
+    "score_mae": null
+   },
+   "eap.respects_autonomy": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.9166666666666666,
+    "brier": 0.14351853703704168,
+    "ece": 0.08333333333333337,
+    "score_mae": null
+   },
+   "eap.honest": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.7916666666666666,
+    "brier": 0.3935185370370417,
+    "ece": 0.20833333333333337,
+    "score_mae": null
+   }
+  },
+  "base:multilingual": {
+   "all": {
+    "n": 632,
+    "missing": 0,
+    "acc": 0.49050632911392406,
+    "brier": 0.8102541125416477,
+    "ece": 0.3418037093445846,
+    "score_mae": 0.7191480558063179
+   },
+   "type:choice": {
+    "n": 179,
+    "missing": 0,
+    "acc": 0.5698324022346368,
+    "brier": 0.6065421711260067,
+    "ece": 0.16249372844675855,
+    "score_mae": null
+   },
+   "lovelang.stance": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.5853658536585366,
+    "brier": 0.5736327437182739,
+    "ece": 0.1469719578458415,
+    "score_mae": null
+   },
+   "type:noul": {
+    "n": 412,
+    "missing": 0,
+    "acc": 0.47572815533980584,
+    "brier": 0.8895971163270785,
+    "ece": 0.42567597087378645,
+    "score_mae": null
+   },
+   "lovelang.truthful": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.1951219512195122,
+    "brier": 1.419282068292683,
+    "ece": 0.7333463414634146,
+    "score_mae": null
+   },
+   "type:score": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.2926829268292683,
+    "brier": 0.9023302089758588,
+    "ece": 0.40826636529698074,
+    "score_mae": 0.7191480558063179
+   },
+   "lovelang.warmth": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.2926829268292683,
+    "brier": 0.9023302089758588,
+    "ece": 0.40826636529698074,
+    "score_mae": 0.7191480558063179
+   },
+   "syco.sycophantic": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.6486486486486487,
+    "brier": 0.4748917156756756,
+    "ece": 0.2935783783783783,
+    "score_mae": null
+   },
+   "syco.reply_type": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.6486486486486487,
+    "brier": 0.5053061362116102,
+    "ece": 0.24741544803185722,
+    "score_mae": null
+   },
+   "syco.respectful": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.0,
+    "brier": 1.8754678951351347,
+    "ece": 0.9677567567567569,
+    "score_mae": null
+   },
+   "arena.better": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.5576923076923077,
+    "brier": 0.5785487355537351,
+    "ece": 0.19065928475928517,
+    "score_mae": null
+   },
+   "arena.A_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.5384615384615384,
+    "brier": 0.7529569557692309,
+    "ece": 0.3406519230769231,
+    "score_mae": null
+   },
+   "arena.B_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.5,
+    "brier": 0.754328979230769,
+    "ece": 0.3590192307692308,
+    "score_mae": null
+   },
+   "attrib.target": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.5102040816326531,
+    "brier": 0.7402294867445349,
+    "ece": 0.2431566566240564,
+    "score_mae": null
+   },
+   "attrib.labels_people": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.8367346938775511,
+    "brier": 0.2395296636734694,
+    "ece": 0.12976734693877542,
+    "score_mae": null
+   },
+   "eap.manipulative": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.625,
+    "brier": 0.7173702975,
+    "ece": 0.351625,
+    "score_mae": null
+   },
+   "eap.respects_autonomy": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.5208333333333334,
+    "brier": 0.7049009821203752,
+    "ece": 0.3204604166666667,
+    "score_mae": null
+   },
+   "eap.honest": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.2916666666666667,
+    "brier": 1.3119853742703746,
+    "ece": 0.6852229166666668,
+    "score_mae": null
+   }
+  },
+  "C:\\Users\\Administrator\\pol2-laya-studio\\distill_data\\models\\laya-pol2-20260924-0504": {
+   "all": {
+    "n": 632,
+    "missing": 0,
+    "acc": 0.8607594936708861,
+    "brier": 0.2078007429486766,
+    "ece": 0.04628804962992799,
+    "score_mae": 0.43505239586261346
+   },
+   "type:choice": {
+    "n": 179,
+    "missing": 0,
+    "acc": 0.8044692737430168,
+    "brier": 0.27731477274256433,
+    "ece": 0.06542907871709529,
+    "score_mae": null
+   },
+   "lovelang.stance": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.7317073170731707,
+    "brier": 0.3620189419272667,
+    "ece": 0.18420233347316967,
+    "score_mae": null
+   },
+   "type:noul": {
+    "n": 412,
+    "missing": 0,
+    "acc": 0.9101941747572816,
+    "brier": 0.1524631806202815,
+    "ece": 0.06014781553398055,
+    "score_mae": null
+   },
+   "lovelang.truthful": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.8292682926829268,
+    "brier": 0.21016218926829272,
+    "ece": 0.14127317073170736,
+    "score_mae": null
+   },
+   "type:score": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.6097560975609756,
+    "brier": 0.4603876782216745,
+    "ece": 0.12810789394759117,
+    "score_mae": 0.43505239586261346
+   },
+   "lovelang.warmth": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.6097560975609756,
+    "brier": 0.4603876782216745,
+    "ece": 0.12810789394759117,
+    "score_mae": 0.43505239586261346
+   },
+   "syco.sycophantic": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.918918918918919,
+    "brier": 0.14545937405405404,
+    "ece": 0.06836756756756754,
+    "score_mae": null
+   },
+   "syco.reply_type": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.6756756756756757,
+    "brier": 0.4398127439474715,
+    "ece": 0.157762158705973,
+    "score_mae": null
+   },
+   "syco.respectful": {
+    "n": 37,
+    "missing": 0,
+    "acc": 1.0,
+    "brier": 0.058644517297297284,
+    "ece": 0.16335945945945943,
+    "score_mae": null
+   },
+   "arena.better": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.9807692307692307,
+    "brier": 0.045961678949355246,
+    "ece": 0.028067319125711587,
+    "score_mae": null
+   },
+   "arena.A_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.9615384615384616,
+    "brier": 0.1164841457692308,
+    "ece": 0.15957499999999997,
+    "score_mae": null
+   },
+   "arena.B_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.9230769230769231,
+    "brier": 0.14020001269230764,
+    "ece": 0.08565192307692307,
+    "score_mae": null
+   },
+   "attrib.target": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.7755102040816326,
+    "brier": 0.3292548749077177,
+    "ece": 0.1108870745440952,
+    "score_mae": null
+   },
+   "attrib.labels_people": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.9591836734693877,
+    "brier": 0.09609774081632654,
+    "ece": 0.05621428571428577,
+    "score_mae": null
+   },
+   "eap.manipulative": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.9166666666666666,
+    "brier": 0.13431036625,
+    "ece": 0.06259375000000005,
+    "score_mae": null
+   },
+   "eap.respects_autonomy": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.8541666666666666,
+    "brier": 0.20514610486204168,
+    "ece": 0.07452291666666669,
+    "score_mae": null
+   },
+   "eap.honest": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.8333333333333334,
+    "brier": 0.25616792754537504,
+    "ece": 0.12381041666666666,
+    "score_mae": null
+   }
+  }
+ },
+ "diagnostics": {
+  "jev:openjev": {
+   "syco_pairs": 18,
+   "syco_mean_delta": -0.005555555555555557,
+   "syco_mean_abs_delta": 0.01,
+   "arena_pairs": 26,
+   "arena_position_consistency": 1.0,
+   "arena_mean_tv": 0.01423076923076923
+  },
+  "ollama:qwen2.5:7b": {
+   "syco_pairs": 18,
+   "syco_mean_delta": 0.0,
+   "syco_mean_abs_delta": 0.0,
+   "arena_pairs": 26,
+   "arena_position_consistency": 0.9615384615384616,
+   "arena_mean_tv": 0.038461538461538464
+  },
+  "ollama:llama3.1:8b": {
+   "syco_pairs": 18,
+   "syco_mean_delta": -0.09259259259259259,
+   "syco_mean_abs_delta": 0.09259259259259259,
+   "arena_pairs": 26,
+   "arena_position_consistency": 1.0,
+   "arena_mean_tv": 0.025641025641025644
+  },
+  "base:multilingual": {
+   "syco_pairs": 18,
+   "syco_mean_delta": 0.11797777777777779,
+   "syco_mean_abs_delta": 0.11845555555555556,
+   "arena_pairs": 26,
+   "arena_position_consistency": 0.11538461538461539,
+   "arena_mean_tv": 0.5677643966277208
+  },
+  "C:\\Users\\Administrator\\pol2-laya-studio\\distill_data\\models\\laya-pol2-20260924-0504": {
+   "syco_pairs": 18,
+   "syco_mean_delta": -0.0058888888888888845,
+   "syco_mean_abs_delta": 0.023366666666666668,
+   "arena_pairs": 26,
+   "arena_position_consistency": 1.0,
+   "arena_mean_tv": 0.02080397841338594
+  }
+ }
+}

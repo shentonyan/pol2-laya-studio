@@ -1,0 +1,622 @@
+{
+ "results": {
+  "jev:openjev": {
+   "all": {
+    "n": 632,
+    "missing": 0,
+    "acc": 0.9208860759493671,
+    "brier": 0.054925563682139925,
+    "ece": 0.07140822784810127,
+    "score_mae": 0.1991714029430169
+   },
+   "type:choice": {
+    "n": 179,
+    "missing": 0,
+    "acc": 0.9162011173184358,
+    "brier": 0.081813324913068,
+    "ece": 0.0335195530726256,
+    "score_mae": null
+   },
+   "lovelang.stance": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.926829268292683,
+    "brier": 0.08608844693326526,
+    "ece": 0.06682926829268292,
+    "score_mae": null
+   },
+   "type:noul": {
+    "n": 412,
+    "missing": 0,
+    "acc": 0.9271844660194175,
+    "brier": 0.04006958808416017,
+    "ece": 0.0979611650485437,
+    "score_mae": null
+   },
+   "lovelang.truthful": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.9512195121951219,
+    "brier": 0.049833774385219506,
+    "ece": 0.2246341463414634,
+    "score_mae": null
+   },
+   "type:score": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.8780487804878049,
+    "brier": 0.08682197065851788,
+    "ece": 0.16804878048780492,
+    "score_mae": 0.1991714029430169
+   },
+   "lovelang.warmth": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.8780487804878049,
+    "brier": 0.08682197065851788,
+    "ece": 0.16804878048780492,
+    "score_mae": 0.1991714029430169
+   },
+   "syco.sycophantic": {
+    "n": 37,
+    "missing": 0,
+    "acc": 1.0,
+    "brier": 0.019699378961081072,
+    "ece": 0.09837837837837839,
+    "score_mae": null
+   },
+   "syco.reply_type": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.918918918918919,
+    "brier": 0.13271714140009871,
+    "ece": 0.0837837837837837,
+    "score_mae": null
+   },
+   "syco.respectful": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.972972972972973,
+    "brier": 0.02981670166616215,
+    "ece": 0.15729729729729733,
+    "score_mae": null
+   },
+   "arena.better": {
+    "n": 52,
+    "missing": 0,
+    "acc": 1.0,
+    "brier": 0.003290376528146013,
+    "ece": 0.027884615384615397,
+    "score_mae": null
+   },
+   "arena.A_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.7692307692307693,
+    "brier": 0.052037073817999976,
+    "ece": 0.0798076923076923,
+    "score_mae": null
+   },
+   "arena.B_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.8461538461538461,
+    "brier": 0.031125703048769222,
+    "ece": 0.11615384615384619,
+    "score_mae": null
+   },
+   "attrib.target": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.8163265306122449,
+    "brier": 0.1231290821205722,
+    "ece": 0.10061224489795922,
+    "score_mae": null
+   },
+   "attrib.labels_people": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.9387755102040817,
+    "brier": 0.06730307874522454,
+    "ece": 0.08224489795918376,
+    "score_mae": null
+   },
+   "eap.manipulative": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.9791666666666666,
+    "brier": 0.025571980755708337,
+    "ece": 0.05124999999999992,
+    "score_mae": null
+   },
+   "eap.respects_autonomy": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.9791666666666666,
+    "brier": 0.03316858983570833,
+    "ece": 0.1504166666666667,
+    "score_mae": null
+   },
+   "eap.honest": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.9583333333333334,
+    "brier": 0.04565683153533332,
+    "ece": 0.16229166666666664,
+    "score_mae": null
+   }
+  },
+  "ollama:llama3.1:8b": {
+   "all": {
+    "n": 632,
+    "missing": 0,
+    "acc": 0.9129746835443038,
+    "brier": 0.09910063007222147,
+    "ece": 0.04588607594936706,
+    "score_mae": 0.2712006444182346
+   },
+   "type:choice": {
+    "n": 179,
+    "missing": 0,
+    "acc": 0.8659217877094972,
+    "brier": 0.1170095284701516,
+    "ece": 0.08007448789571697,
+    "score_mae": null
+   },
+   "lovelang.stance": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.8536585365853658,
+    "brier": 0.14963699473820563,
+    "ece": 0.12195121951219512,
+    "score_mae": null
+   },
+   "type:noul": {
+    "n": 412,
+    "missing": 0,
+    "acc": 0.941747572815534,
+    "brier": 0.08292029235600497,
+    "ece": 0.04611650485436897,
+    "score_mae": null
+   },
+   "lovelang.truthful": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.9512195121951219,
+    "brier": 0.11524483975107312,
+    "ece": 0.04878048780487809,
+    "score_mae": null
+   },
+   "type:score": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.8292682926829268,
+    "brier": 0.18350566241006475,
+    "ece": 0.15447154471544716,
+    "score_mae": 0.2712006444182346
+   },
+   "lovelang.warmth": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.8292682926829268,
+    "brier": 0.18350566241006475,
+    "ece": 0.15447154471544716,
+    "score_mae": 0.2712006444182346
+   },
+   "syco.sycophantic": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.9459459459459459,
+    "brier": 0.03406446184396398,
+    "ece": 0.08108108108108111,
+    "score_mae": null
+   },
+   "syco.reply_type": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.7027027027027027,
+    "brier": 0.19201046121995385,
+    "ece": 0.13513513513513511,
+    "score_mae": null
+   },
+   "syco.respectful": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.8918918918918919,
+    "brier": 0.05784458911360963,
+    "ece": 0.009009009009009016,
+    "score_mae": null
+   },
+   "arena.better": {
+    "n": 52,
+    "missing": 0,
+    "acc": 1.0,
+    "brier": 0.02572375786128164,
+    "ece": 0.012820512820512822,
+    "score_mae": null
+   },
+   "arena.A_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.9038461538461539,
+    "brier": 0.11071225236500853,
+    "ece": 0.06410256410256408,
+    "score_mae": null
+   },
+   "arena.B_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.9038461538461539,
+    "brier": 0.15063101304876925,
+    "ece": 0.11538461538461539,
+    "score_mae": null
+   },
+   "attrib.target": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.8571428571428571,
+    "brier": 0.1299503334278726,
+    "ece": 0.10204081632653061,
+    "score_mae": null
+   },
+   "attrib.labels_people": {
+    "n": 49,
+    "missing": 0,
+    "acc": 1.0,
+    "brier": 0.019296991851800446,
+    "ece": 0.006802721088435375,
+    "score_mae": null
+   },
+   "eap.manipulative": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.9791666666666666,
+    "brier": 0.008692807237189815,
+    "ece": 0.006944444444444442,
+    "score_mae": null
+   },
+   "eap.respects_autonomy": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.9583333333333334,
+    "brier": 0.07233416233570834,
+    "ece": 0.04166666666666663,
+    "score_mae": null
+   },
+   "eap.honest": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.9375,
+    "brier": 0.158599795702,
+    "ece": 0.0625,
+    "score_mae": null
+   }
+  },
+  "base:multilingual": {
+   "all": {
+    "n": 632,
+    "missing": 0,
+    "acc": 0.5142405063291139,
+    "brier": 0.5447236577669518,
+    "ece": 0.3180695321293947,
+    "score_mae": 0.5467130718637997
+   },
+   "type:choice": {
+    "n": 179,
+    "missing": 0,
+    "acc": 0.5642458100558659,
+    "brier": 0.45413143808424833,
+    "ece": 0.15882862194749298,
+    "score_mae": null
+   },
+   "lovelang.stance": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.6097560975609756,
+    "brier": 0.30637146419008204,
+    "ece": 0.16485594099887646,
+    "score_mae": null
+   },
+   "type:noul": {
+    "n": 412,
+    "missing": 0,
+    "acc": 0.5121359223300971,
+    "brier": 0.590948533029791,
+    "ece": 0.38441383495145637,
+    "score_mae": null
+   },
+   "lovelang.truthful": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.24390243902439024,
+    "brier": 0.8835937216340003,
+    "ece": 0.6845658536585366,
+    "score_mae": null
+   },
+   "type:score": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.3170731707317073,
+    "brier": 0.4757324069111975,
+    "ece": 0.3838761213945417,
+    "score_mae": 0.5467130718637997
+   },
+   "lovelang.warmth": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.3170731707317073,
+    "brier": 0.4757324069111975,
+    "ece": 0.3838761213945417,
+    "score_mae": 0.5467130718637997
+   },
+   "syco.sycophantic": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.6486486486486487,
+    "brier": 0.3596848260962162,
+    "ece": 0.2935783783783783,
+    "score_mae": null
+   },
+   "syco.reply_type": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.6486486486486487,
+    "brier": 0.32244491865928443,
+    "ece": 0.24741544803185722,
+    "score_mae": null
+   },
+   "syco.respectful": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.02702702702702703,
+    "brier": 1.2667739613634597,
+    "ece": 0.9407297297297298,
+    "score_mae": null
+   },
+   "arena.better": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.5576923076923077,
+    "brier": 0.5121944177646178,
+    "ece": 0.19065928475928517,
+    "score_mae": null
+   },
+   "arena.A_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.5769230769230769,
+    "brier": 0.3776510638026153,
+    "ece": 0.30219038461538467,
+    "score_mae": null
+   },
+   "arena.B_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.5576923076923077,
+    "brier": 0.36368942996415393,
+    "ece": 0.3013269230769231,
+    "score_mae": null
+   },
+   "attrib.target": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.46938775510204084,
+    "brier": 0.6155862381863981,
+    "ece": 0.32478930968528086,
+    "score_mae": null
+   },
+   "attrib.labels_people": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.8775510204081632,
+    "brier": 0.12017749753706121,
+    "ece": 0.08895102040816318,
+    "score_mae": null
+   },
+   "eap.manipulative": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.625,
+    "brier": 0.6303079721557082,
+    "ece": 0.351625,
+    "score_mae": null
+   },
+   "eap.respects_autonomy": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.5208333333333334,
+    "brier": 0.5494745150273749,
+    "ece": 0.3204604166666667,
+    "score_mae": null
+   },
+   "eap.honest": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.3958333333333333,
+    "brier": 0.9582607384436667,
+    "ece": 0.5615854166666667,
+    "score_mae": null
+   }
+  },
+  "distill_data\\models\\laya-pol2-20260924-0504": {
+   "all": {
+    "n": 632,
+    "missing": 0,
+    "acc": 0.8591772151898734,
+    "brier": 0.09099271598366694,
+    "ece": 0.05496237595246872,
+    "score_mae": 0.24393364239577717
+   },
+   "type:choice": {
+    "n": 179,
+    "missing": 0,
+    "acc": 0.8212290502793296,
+    "brier": 0.11868771472516164,
+    "ece": 0.07048939161154198,
+    "score_mae": null
+   },
+   "lovelang.stance": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.7317073170731707,
+    "brier": 0.1642351462286167,
+    "ece": 0.1519584310341453,
+    "score_mae": null
+   },
+   "type:noul": {
+    "n": 412,
+    "missing": 0,
+    "acc": 0.8883495145631068,
+    "brier": 0.0765230191657136,
+    "ece": 0.05423033980582523,
+    "score_mae": null
+   },
+   "lovelang.truthful": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.8292682926829268,
+    "brier": 0.0878867680632683,
+    "ece": 0.16702926829268297,
+    "score_mae": null
+   },
+   "type:score": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.7317073170731707,
+    "brier": 0.11548321145364762,
+    "ece": 0.13755461827639978,
+    "score_mae": 0.24393364239577717
+   },
+   "lovelang.warmth": {
+    "n": 41,
+    "missing": 0,
+    "acc": 0.7317073170731707,
+    "brier": 0.11548321145364762,
+    "ece": 0.13755461827639978,
+    "score_mae": 0.24393364239577717
+   },
+   "syco.sycophantic": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.918918918918919,
+    "brier": 0.08641716426918918,
+    "ece": 0.06836756756756754,
+    "score_mae": null
+   },
+   "syco.reply_type": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.7297297297297297,
+    "brier": 0.17904831072365862,
+    "ece": 0.17216275917895194,
+    "score_mae": null
+   },
+   "syco.respectful": {
+    "n": 37,
+    "missing": 0,
+    "acc": 0.972972972972973,
+    "brier": 0.03656028951481082,
+    "ece": 0.1363324324324324,
+    "score_mae": null
+   },
+   "arena.better": {
+    "n": 52,
+    "missing": 0,
+    "acc": 1.0,
+    "brier": 0.009631327636427016,
+    "ece": 0.047298088356480854,
+    "score_mae": null
+   },
+   "arena.A_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.8846153846153846,
+    "brier": 0.04319668308723078,
+    "ece": 0.11795961538461538,
+    "score_mae": null
+   },
+   "arena.B_keeps_truth": {
+    "n": 52,
+    "missing": 0,
+    "acc": 0.8653846153846154,
+    "brier": 0.04955279141030769,
+    "ece": 0.0606173076923077,
+    "score_mae": null
+   },
+   "attrib.target": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.7755102040816326,
+    "brier": 0.15073149809308317,
+    "ece": 0.14499875673092635,
+    "score_mae": null
+   },
+   "attrib.labels_people": {
+    "n": 49,
+    "missing": 0,
+    "acc": 0.9591836734693877,
+    "brier": 0.02241696770032654,
+    "ece": 0.07953265306122455,
+    "score_mae": null
+   },
+   "eap.manipulative": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.9166666666666666,
+    "brier": 0.1109669340557084,
+    "ece": 0.06259375000000005,
+    "score_mae": null
+   },
+   "eap.respects_autonomy": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.8541666666666666,
+    "brier": 0.13468674069404168,
+    "ece": 0.10236875000000002,
+    "score_mae": null
+   },
+   "eap.honest": {
+    "n": 48,
+    "missing": 0,
+    "acc": 0.8125,
+    "brier": 0.11794125284366667,
+    "ece": 0.12938541666666664,
+    "score_mae": null
+   }
+  }
+ },
+ "diagnostics": {
+  "jev:openjev": {
+   "syco_pairs": 18,
+   "syco_mean_delta": -0.005555555555555557,
+   "syco_mean_abs_delta": 0.01,
+   "arena_pairs": 26,
+   "arena_position_consistency": 1.0,
+   "arena_mean_tv": 0.01423076923076923
+  },
+  "ollama:llama3.1:8b": {
+   "syco_pairs": 18,
+   "syco_mean_delta": -0.09259259259259259,
+   "syco_mean_abs_delta": 0.09259259259259259,
+   "arena_pairs": 26,
+   "arena_position_consistency": 1.0,
+   "arena_mean_tv": 0.025641025641025644
+  },
+  "base:multilingual": {
+   "syco_pairs": 18,
+   "syco_mean_delta": 0.11797777777777779,
+   "syco_mean_abs_delta": 0.11845555555555556,
+   "arena_pairs": 26,
+   "arena_position_consistency": 0.11538461538461539,
+   "arena_mean_tv": 0.5677643966277208
+  },
+  "distill_data\\models\\laya-pol2-20260924-0504": {
+   "syco_pairs": 18,
+   "syco_mean_delta": -0.0058888888888888845,
+   "syco_mean_abs_delta": 0.023366666666666668,
+   "arena_pairs": 26,
+   "arena_position_consistency": 1.0,
+   "arena_mean_tv": 0.02080397841338594
+  }
+ }
+}

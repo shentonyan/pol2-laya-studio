@@ -69,6 +69,20 @@ $py = ".\.venv\Scripts\python.exe"
 
 macOS / Linux 把 `.\.venv\Scripts\python.exe` 换成 `.venv/bin/python` 即可。
 
+## 蒸馏：训练 PoL2 专用的 Laya 判别模型
+
+基础 checkpoint 零样本只能演示流程。[`distill/`](distill/README.md) 提供一条完整流水线：先用 Jev 和本地 LLM 当老师给 PoL2 场景打软标签，老师有分歧的题目交人工复核，再用官方的 RLCD 方法在单显卡上微调 Laya，最后在盲标的人工金标集上，把基础模型、学生和各个老师放在一起比较。
+
+```powershell
+& $py -m distill seeds
+& $py -m distill generate --model gemma4:26b --per-scenario 300
+& $py -m distill label --teacher jev --teacher ollama:qwen2.5:7b --teacher ollama:llama3.1:8b
+& $py -m distill build --teacher jev --teacher ollama:qwen2.5:7b --teacher ollama:llama3.1:8b
+& $py -m distill train
+```
+
+详见 [`distill/README.md`](distill/README.md)。
+
 ## 静态演示（GitHub Pages）
 
 `docs/` 同时是前端和 GitHub Pages 的站点目录。页面打开时会先探测本地的 `app.py`：

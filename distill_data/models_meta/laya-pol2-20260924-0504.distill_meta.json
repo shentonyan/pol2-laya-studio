@@ -1,0 +1,21 @@
+{
+  "created": "2026-09-24T05:07:23+0800",
+  "base": "convaiinnovations/laya",
+  "subfolder": "multilingual",
+  "train_file": "C:\\Users\\Administrator\\pol2-laya-studio\\distill_data\\dataset\\train.jsonl",
+  "train_sha": "49ba9b9411975ade",
+  "n_rows": 1292,
+  "n_train_items": 2811,
+  "n_calib_items": 381,
+  "epochs": 4,
+  "micro_batch": 8,
+  "grad_accum": 8,
+  "lr_encoder": 2.5e-05,
+  "lr_head": 0.0001,
+  "temperatures": [
+    1.1161671876907349,
+    0.8971089124679565,
+    1.1767112016677856
+  ],
+  "honesty": "学生模型蒸馏自老师共识；上限是老师，偏差会一起学走。须用人工金标集评估。"
+}

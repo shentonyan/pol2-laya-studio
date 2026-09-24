@@ -6,3 +6,7 @@ laya-env/
 *.csv
 .DS_Store
 Thumbs.db
+.env
+distill_data/models/
+distill_data/eval/_states.tmp.jsonl
+.pytest_cache/
