@@ -81,7 +81,7 @@ macOS / Linux 把 `.\.venv\Scripts\python.exe` 换成 `.venv/bin/python` 即可�
 & $py -m distill train
 ```
 
-详见 [`distill/README.md`](distill/README.md)。
+详见 [`distill/README.md`](distill/README.md)。v2 起的完整训练方案（PoL2 数据 ≤ 10% 的混合训练、两条路线、评估与实验顺序）见 [`docs/training_plan.md`](docs/training_plan.md)。
 
 ## 静态演示（GitHub Pages）
 
